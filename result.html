@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgery Detection Result</title>
+</head>
+<body>
+    <h1>Forgery Detection Result</h1>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <h2>Uploaded Image</h2>
+            <img src="{{ uploaded_image.image.url }}" alt="Uploaded Image" style="max-width: 100%;">
+        </div>
+        <div style="width: 50%;">
+            <h2>Detection Info</h2>
+            <p><strong>Forged:</strong> {{ is_forged }}</p>
+            <p><strong>Info:</strong> {{ info }}</p>
+        </div>
+    </div>
+</body>
+</html>
